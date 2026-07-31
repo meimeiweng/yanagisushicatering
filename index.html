@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Yan's Sushi Catering</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1>Yan's Sushi Catering</h1>
+        <p class="tagline">Fresh • Delightful • Joyful</p>
+      </div>
+      <nav class="main-nav">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#menus">Menus</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h2>Handmade sushi with heart</h2>
+          <p>Chef Yan brings over 20 years of sushi craftsmanship to your table — fresh fish, artistic plating, and perfectly matched sauces.</p>
+          <a href="#contact" class="btn primary">Book an Event</a>
+        </div>
+        <div class="hero-image">
+          <!-- Image 1 (office/boxed sushi) - save as images/image1.jpg -->
+          <img src="images/image1.jpg" alt="Assorted sushi on wooden board">
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <div class="container">
+        <h3>About Us</h3>
+        <div class="about-grid">
+          <div class="about-image">
+            <!-- Image 2 (single salmon nigiri) - save as images/image2.jpg -->
+            <img src="images/image2.jpg" alt="Chef Yan preparing sushi">
+          </div>
+          <div class="about-text">
+            <h4>Meet Chef Yan</h4>
+            <p>Chef Yan has over 20 years of experience as a sushi chef. His approach is simple but exacting: he believes the heart of sushi is "fresh fish, artful plating, and precise sauce pairing." Each bite is crafted to bring balance, color, and a smile.</p>
+            <blockquote>“Fresh fish, artful plating, and precise sauce pairing.”</blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section services">
+      <div class="container">
+        <h3>Services</h3>
+        <div class="services-grid">
+          <article class="service-card">
+            <!-- Image 3 (sushi platter) - save as images/image3.jpg -->
+            <img src="images/image3.jpg" alt="Grab and go sushi boxes">
+            <h4>GRAB &amp; GO DELIVERY</h4>
+            <p>Freshly prepared sushi boxes and platters ready for quick pick-up or delivery. Perfect for lunch crowds, small gatherings, or a delightful everyday treat.</p>
+          </article>
+
+          <article class="service-card">
+            <!-- Image 4 (large catering spread) - save as images/image4.jpg -->
+            <img src="images/image4.jpg" alt="Party sushi table">
+            <h4>PARTY</h4>
+            <p>Make your party unforgettable with custom sushi stations, sharable platters, or beautifully arranged sushi towers. We tailor portions and presentation to your theme and guest count.</p>
+          </article>
+
+          <article class="service-card">
+            <!-- Reuse Image 5 for corporate (or provide another if you prefer) - images/image5.jpg -->
+            <img src="images/image5.jpg" alt="Corporate chef serving sushi">
+            <h4>CORPORATE CHEF SERVICES</h4>
+            <p>On-site chef services for corporate luncheons, team celebrations, or client hospitality. Professional presentation and efficient service so your event runs smoothly.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENUS (placeholder) -->
+    <section id="menus" class="section menus">
+      <div class="container">
+        <h3>Menus</h3>
+        <div class="menus-placeholder">
+          <!-- Image 6 as menus placeholder - images/image6.jpg -->
+          <img src="images/image6.jpg" alt="Sushi menu placeholder">
+          <p>We're updating our menus. Please check back soon or contact us for a custom menu.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h3>Contact</h3>
+        <div class="contact-grid">
+          <div class="contact-details">
+            <h4>Get in touch</h4>
+            <p><strong>Address:</strong> 26 Murphy Dr, Bridgewater, NJ 08807</p>
+            <p><strong>Phone:</strong> <a href="tel:+16463870666">646-387-0666</a></p>
+            <p><strong>Email:</strong> <a href="mailto:info@yanssushicatering.com">info@yanssushicatering.com</a></p>
+          </div>
+
+          <div class="contact-form">
+            <h4>Book an Event</h4>
+            <form id="bookingForm" action="https://formsubmit.co/meimeiweng@yahoo.com" method="POST" target="_blank">
+              <input type="hidden" name="_subject" value="New booking from Yan's Sushi Catering website">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_next" value="https://yoursite.example/thank-you.html">
+              <label>
+                Your name
+                <input type="text" name="name" required>
+              </label>
+              <label>
+                Email
+                <input type="email" name="email" required>
+              </label>
+              <label>
+                Phone
+                <input type="tel" name="phone" required>
+              </label>
+              <label>
+                Event date
+                <input type="date" name="event_date">
+              </label>
+              <label>
+                Event type
+                <select name="event_type">
+                  <option>Party</option>
+                  <option>Corporate</option>
+                  <option>Private dinner</option>
+                  <option>Other</option>
+                </select>
+              </label>
+              <label>
+                Number of guests
+                <input type="number" name="guests" min="1">
+              </label>
+              <label>
+                Message / special requests
+                <textarea name="message" rows="4"></textarea>
+              </label>
+              <div class="form-actions">
+                <button type="submit" class="btn primary">Submit Booking</button>
+                <button type="button" id="mailtoFallback" class="btn">Email instead</button>
+              </div>
+              <p id="formStatus" class="form-status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Yan's Sushi Catering — Fresh food, warm hearts.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
