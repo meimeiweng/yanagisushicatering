@@ -50,6 +50,7 @@ form.addEventListener('submit', (e) => {
     }
   }).catch(err => {
     // Likely CORS or network issue — use form submit (opens new tab) to ensure email is sent by the form service
+    console.error('Fetch submit failed:', err);
     status.textContent = 'Network fallback: opening email form in a new tab.';
     form.submit();
   });
