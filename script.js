@@ -20,7 +20,7 @@ mailtoBtn.addEventListener('click', () => {
   const body = encodeURIComponent(
     `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nEvent date: ${date}\nEvent type: ${type}\nGuests: ${guests}\n\nMessage:\n${message}`
   );
-  const mailto = `mailto:meimeiweng@yahoo.com?subject=${subject}&body=${body}`;
+  const mailto = `mailto:yanagisushicatering@gmail.com?subject=${subject}&body=${body}`;
   window.location.href = mailto;
 });
 
